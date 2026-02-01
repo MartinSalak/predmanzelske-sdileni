@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Single Page Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: #fff;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    /* Slider */
+    .slider-section {
+      margin-bottom: 32px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .slider-value {
+      text-align: center;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    /* FAQ */
+    .faq {
+      margin-bottom: 32px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      padding: 12px 0;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #555;
+    }
+
+    .faq-answer p {
+      margin: 0 0 12px;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+
+    /* Contact form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      background: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>My Single Page Site</h1>
+
+    <!-- Slider -->
+    <div class="slider-section">
+      <input type="range" min="0" max="100" value="50" id="slider" />
+      <div class="slider-value">Value: <span id="sliderValue">50</span></div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">What is this? <span>+</span></div>
+        <div class="faq-answer">
+          <p>This is a simple single-page website.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Does it work on GitHub Pages? <span>+</span></div>
+        <div class="faq-answer">
+          <p>Yes, it’s fully static and perfect for GitHub Pages.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <script>
+    // Slider
+    const slider = document.getElementById("slider");
+    const sliderValue = document.getElementById("sliderValue");
+
+    slider.addEventListener("input", () => {
+      sliderValue.textContent = slider.value;
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(q => {
+      q.addEventListener("click", () => {
+        q.parentElement.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
