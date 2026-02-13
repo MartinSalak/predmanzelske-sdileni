@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/de/</loc>
+    <loc>https://martinsalak.github.io/predmanzelske-sdileni/de/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/de/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/license/</loc>
+    <loc>https://martinsalak.github.io/predmanzelske-sdileni/de/license/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/license/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/license/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/license/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/de/license/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/services/</loc>
+    <loc>https://martinsalak.github.io/predmanzelske-sdileni/de/services/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/services/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/services/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/de/services/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/legal/</loc>
+    <loc>https://martinsalak.github.io/predmanzelske-sdileni/de/legal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/legal/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/legal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/legal/"
+                href="https://martinsalak.github.io/predmanzelske-sdileni/de/legal/"
                 />
   </url>
 </urlset>
